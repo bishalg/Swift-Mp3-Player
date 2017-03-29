@@ -75,7 +75,6 @@ class ViewController: UIViewController {
   
   func playSound(audioPath: URL) {
     updater = CADisplayLink(target: self, selector: #selector(trackAudioProgress))
-    // updater.preferredFramesPerSecond = 1
     updater.add(to: RunLoop.current, forMode: RunLoopMode.commonModes)
     
     do {
